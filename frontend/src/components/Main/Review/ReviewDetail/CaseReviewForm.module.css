@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  flex: 1;
+  background-color: #fff;
+  position: relative;
+}
+
+.inner-container {
+  padding: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.flex-row .edit-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.column {
+  padding: 5px;
+}
+
+.review-fields .row {
+  margin: 5px 0;
+}
+
+.field-name {
+  font-weight: bold;
+}
+
+.rounded-dropdown {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+.rounded-dropdown::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.bottom-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #3f556a;
+  font-size: 1.2rem;
+}
+
+.bottom-group-left {
+  display: flex;
+  margin-left: 20px;
+}
+
+.bottom-group-right {
+  display: flex;
+  margin-right: 20px;
+}
+
+.bottom-container button {
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  border-left: 1px solid #eee;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #f5f6fa;
+  color: #3f556a;
+}
+
+/* Style the left button with rounded left corner */
+button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: none;
+}
+
+/* Style the right button with rounded right corner */
+button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button:first-child {
+  border: 1px solid transparent;
+}

@@ -1,0 +1,39 @@
+.column {
+  padding: 0;
+}
+
+.remarks-item {
+  padding: 5px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.remarks-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.remarks-description {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  line-height: 1.2rem;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.edit-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment {
+  max-height: 100px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 0.7rem;
+}
