@@ -35,7 +35,7 @@ $ docker-compose up
 ## Access the application
 
 - Frontend: Open your web browser and navigate to http://localhost:3001.
-- Backend: The backend API is accessible at http://localhost:3000.
+- Backend: The backend API is accessible at http://localhost:3000. API doc can be accessed at http://localhost:3000/api.
 - Database: MySQL is running on port 3306.
 - phpMyAdmin can be accessed at http://localhost:8080/index.php?route=/database/structure&db=protix
 
