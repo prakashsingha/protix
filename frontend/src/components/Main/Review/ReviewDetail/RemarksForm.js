@@ -59,17 +59,19 @@ const RemarksForm = (props) => {
             <div className={classes.column}>
               <div className={classes['comment-heading']}>Comments</div>
             </div>
-            <div className={`${classes.column} ${classes['updated-at']}`}>
-              Updated{' '}
-              {createdReviews.length > 0 &&
-                convertISOToDateTime(createdReviews[0].updatedAt)}
-            </div>
+            {createdReviews.length > 0 && (
+              <div className={`${classes.column} ${classes['updated-at']}`}>
+                Updated {convertISOToDateTime(createdReviews[0].updatedAt)}
+              </div>
+            )}
           </div>
 
           <div className={classes['remarks-list']}>
-            {createdReviews.map((review) => (
-              <ReviewItem key={review.id} review={review} />
-            ))}
+            {createdReviews.length > 0 &&
+              createdReviews.map((review) => (
+                <ReviewItem key={review.id} review={review} />
+              ))}
+            {createdReviews.length === 0 && <div>No any comment yet!</div>}
           </div>
 
           <div className={classes['flex-row']}>
